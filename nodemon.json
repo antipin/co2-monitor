@@ -1,0 +1,6 @@
+{
+  "verbose": false,
+  "watch": ["./dist"],
+  "ignore": ["./dist/client"],
+  "ext": "js json"
+}
