@@ -2,7 +2,6 @@ export async function co2History(deps) {
 
     const { co2DataLogger, co2SensorDataStream, logger } = deps
     const log = logger.getLogger('co2-history')
-    const history = await co2DataLogger.fetch()
 
     co2SensorDataStream.on('data', async (data) => {
 
@@ -20,7 +19,7 @@ export async function co2History(deps) {
 
     log.info('co2History component successfully inited')
 
-    return history
+    return await co2DataLogger.fetch()
 
 }
 

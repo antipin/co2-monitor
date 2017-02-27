@@ -43,7 +43,7 @@ export async function composeApp() {
         },
         {
             component: co2SocketServer,
-            deps: [ hapi, logger, co2History, co2SensorDataStream ],
+            deps: [ hapi, logger, co2DataLogger, co2SensorDataStream ],
         },
     ])
 
