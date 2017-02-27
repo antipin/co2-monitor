@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+
+.app {
+    height: 100vh;
+    position: relative;
+    background-color: #FAFAFA;
+}
+
+.app__header {
+    height: 20vh;
+    margin: 0;
+    text-align: center;
+    line-height: 20vh;
+    color: #DDD;
+    font-weight: 100;
+    font-size: 64px;
+}
+
+.app__body {
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.co2-chart {
+    height: 80vh;
+    width: 100%;
+}

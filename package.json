@@ -5,10 +5,10 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "build-client:dev": "NODE_ENV=development ./node_modules/.bin/babel ./src --out-dir ./dist --copy-files --ignore **/node_modules/**/*.js --watch",
-    "build-client": "NODE_ENV=production ./node_modules/.bin/babel ./src --out-dir ./dist --copy-files --ignore **/node_modules/**/*.js",
-    "build-server:dev": "NODE_ENV=development ./node_modules/.bin/babel ./src --out-dir ./dist --copy-files --ignore **/node_modules/**/*.js --watch",
-    "build-server": "NODE_ENV=production ./node_modules/.bin/babel ./src --out-dir ./dist --copy-files --ignore **/node_modules/**/*.js",
+    "build-client:dev": "NODE_ENV=development ./node_modules/.bin/babel ./src/client --out-dir ./dist/client --copy-files --ignore **/node_modules/**/*.js --watch",
+    "build-client": "NODE_ENV=production ./node_modules/.bin/babel ./src/client --out-dir ./dist/client --copy-files --ignore **/node_modules/**/*.js",
+    "build-server:dev": "NODE_ENV=development ./node_modules/.bin/babel ./src/server --out-dir ./dist/server --copy-files --ignore **/node_modules/**/*.js --watch",
+    "build-server": "NODE_ENV=production ./node_modules/.bin/babel ./src/server --out-dir ./dist/server --copy-files --ignore **/node_modules/**/*.js",
     "start:dev": "NODE_ENV=development ./node_modules/.bin/nodemon ./dist/server/bin/app.js",
     "start": "NODE_ENV=production node ./dist/server/bin/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,13 @@
     "babel-cli": "6.22.2",
     "babel-preset-labs42": "1.0.2",
     "nodemon": "1.11.0"
+  },
+  "dependencies": {
+    "appi": "0.0.10",
+    "inert": "4.1.0",
+    "mkdirp": "0.5.1",
+    "serialport": "4.0.7",
+    "socket.io": "1.7.3",
+    "usb": "1.2.0"
   }
 }
