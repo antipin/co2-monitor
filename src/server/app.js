@@ -2,7 +2,8 @@ import { compose, logger, hapi } from 'appi'
 import { staticFilesServer, co2SensorDataStream, co2DataLogger, co2History, co2SocketServer } from './modules'
 
 const env = {
-    HISTORY_FILENAME: 'data/history.log'
+    APP_PORT: 8001,
+    HISTORY_FILENAME: 'data/history.log',
 }
 
 /**
