@@ -21,5 +21,5 @@ Good news is that this repo already has bundled binary in it, so all you need is
  * ``npm run start``
  * ``http://localhost:8001``
 
-If there are any errors concerning, i guess you should build [CO2mon](https://github.com/dmage/co2mon) by yourself
+If there are any errors concerning lack of some library, I guess you should build [CO2mon](https://github.com/dmage/co2mon) by yourself
 and replace bundled binary with builded one.
