@@ -81,7 +81,13 @@ class Co2DataStream extends Readable {
     static parseData(data) {
 
         const input = data.toString().replace(/\n/g, '')
-        const [ param, value ] = input.split('\t')
+        let [ param, value ] = input.split('\t')
+
+        if (param === 'Tamb') {
+
+            value = parseFloat(value).toFixed(2)
+
+        }
 
         return {
             param,
