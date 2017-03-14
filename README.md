@@ -7,7 +7,7 @@ The goal of this project is a program that takes data from CO2 meter and plots i
 How does it look like?
 ----------------------
 
-This project is working with this device:
+This project works with this device:
 
 ![Device](/docs/images/device.png?raw=true)
 
