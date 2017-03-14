@@ -64,8 +64,8 @@
                         position: "right",
                         id: "y-axis-1",
                         ticks: {
-                            max: 1400,
-                            min: 400,
+                            max: 1800,
+                            min: 300,
                             stepSize: 100,
                             fontColor: 'rgba(0, 143, 0, 0.9)',
                         },
@@ -76,11 +76,11 @@
                     }, {
                         type: 'linear',
                         display: true,
-                        position: "left",
+                        position: "right",
                         id: "y-axis-2",
                         ticks: {
                             max: 30,
-                            min: 0,
+                            min: 5,
                             stepSize: 5,
                             fontColor: 'rgba(20, 92, 255, 0.6)',
                         },
