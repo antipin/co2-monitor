@@ -5,7 +5,7 @@
     app.init = function() {
 
         const socket = io()
-        const [ co2Canvas ] = document.getElementsByClassName('co2-chart')
+        const co2Canvas = document.getElementsByClassName('co2-chart')[0]
         const co2CanvasContext = co2Canvas.getContext('2d')
         const co2Color = 'rgba(0, 143, 0, 0.9)'
         const co2ColorPoint = 'rgba(0, 143, 0, 0.6)'
