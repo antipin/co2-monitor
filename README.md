@@ -30,8 +30,14 @@ Good news is that this repo already has bundled binary in it, so all you need is
  * ``npm install``
  * ``npm run build-server``
  * ``npm run build-client``
- * ``npm run start``
+ * ``npm run start`` (or, if you need sudo ``NODE_ENV=production sudo node ./dist/server/bin/app.js``)
  * ``http://localhost:8001``
 
 If there are any errors concerning lack of some library, I guess you should build [CO2mon](https://github.com/dmage/co2mon) by yourself
 and replace bundled binary with builded one.
+
+RaspberryPi
+-----------
+
+If you have issues on RaspberryPi, try to run app with sudo by:
+``NODE_ENV=production sudo node ./dist/server/bin/app.js`` command.
