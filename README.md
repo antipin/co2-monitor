@@ -41,3 +41,17 @@ RaspberryPi
 
 If you have issues on RaspberryPi, try to run app with sudo by:
 ``NODE_ENV=production sudo node ./dist/server/bin/app.js`` command.
+
+Troubleshooting
+---------------
+
+### ``Syntax error: "(" unexpected`` error
+
+If yo see the following error
+```
+co2-sensor-data-stream.ERROR: /home/pi/co2-monitor/dist/server/modules/co2-sensor-data-stream/lib/co2mond: 1: /home/pi/co2-monitor/dist/server/modules/co2-sensor-data-stream/lib/co2mond: Syntax error: "(" unexpected
+```
+try to run app with sudo:
+```
+NODE_ENV=production sudo node ./dist/server/bin/app.js
+```
